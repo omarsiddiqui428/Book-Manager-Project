@@ -1,0 +1,50 @@
+{
+    "Advanced Python": {
+        "author": "Jane Smith",
+        "year": 2019,
+        "quantity": 2,
+        "genre": "Programming",
+        "ISBN": "567848",
+        "Number of Ratings": 1,
+        "Sum of Ratings": 3.2,
+        "Average Rating": 3.2
+    },
+    "Harry Potter and the Deathly Hallows": {
+        "author": "J. K. Rowling",
+        "year": "2007",
+        "quantity": "20",
+        "genre": "Fantasy"
+    },
+    "When Breath Becomes Air": {
+        "author": "Paul Kalanithi",
+        "year": "2016",
+        "quantity": "40",
+        "genre": "Autobiography"
+    },
+    "The Catcher in the Rye": {
+        "author": "J. D. Salinger",
+        "year": "1951",
+        "quantity": 130,
+        "genre": "young adult",
+        "ISBN Number": "123456",
+        "Number of Ratings": 2,
+        "Sum of Ratings": 8.6,
+        "Average Rating": 4.3
+    },
+    "The Old Man and the Sea": {
+        "author": "Omar",
+        "year": "1952",
+        "quantity": 310,
+        "genre": "Novel",
+        "ISBN": "123456",
+        "Number of Ratings": 1,
+        "Sum of Ratings": 3.4,
+        "Average Rating": 3.4
+    },
+    "How To Make It in the New Music Business": {
+        "author": "Ari Herstand ",
+        "year": "2016",
+        "quantity": "20",
+        "genre": "Biography"
+    }
+}
