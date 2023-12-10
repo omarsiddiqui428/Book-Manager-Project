@@ -13,6 +13,13 @@ def save_books(data): #Writes changes made in the open JSON file to the original
         json.dump(data, file, indent=4)
 
 def get_book(title): #Loads the data associated with an inputted title #EDIT TO MAKE IT LOAD TITLE AS WELL
+    # TODO: Let's make these functions more reusable. handle printing in the main method, return data for your functions
+    # TODO: Make sure this is JUST "getting" the books data. It should not do anything that is not conferred by the name. This makes the program more organized
+    # TODO: "Pure functions": A function that minds its own business, does not change any objects or variables that existed before it was called, for the same inputs it will always have the same outputs
+    # Printing to the console is a side effect here, has nothing to do with actually getting the books data
+    # Engineers have to trust that a function does what it's supposed to do without any side effects
+    # TODO: Work on making the functions all pure functions
+
     x = load_books()
     if book_exists(title) == True:
         print("    Title: " + str(title))
@@ -21,6 +28,7 @@ def get_book(title): #Loads the data associated with an inputted title #EDIT TO 
         print("The title you entered is not in library")
 
 def display_all_books(): #Displays the data of all the books in the JSON file #NOT DISPLAYING TITLE AT THE MOMENT
+    # TODO: get_book is being used inccorectly here- does not return any data for us to capture (may not be accurate)
     x = load_books()
     for title in x.keys():
         book_info = get_book(title)
@@ -28,6 +36,8 @@ def display_all_books(): #Displays the data of all the books in the JSON file #N
         print(modified_book_info)
 
 def book_exists(title): #Checks if an inputted title exists in the JSON file
+    # TODO: Explain this line: Return title in load_books()
+    # TODO: curreny implementation is fine, this us just a more pythonic way of doing it
     x = load_books()
     if title in x:
         return True
