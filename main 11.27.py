@@ -1,7 +1,11 @@
 #Global variables
 import json
+#Lessons learned here:
+#Functions should be named in an intuitive way that another engineer can understand 
+#Fuctions should only do precisely what they're labeled to do. For example if it had to "Update book quantity", it should JUST do that. Not print the quantity of the books or print a statement etc.
+#This is called "Pure functions"
+#Moving onto the next project for now, but remember this for next time!! I outlined this in the "TO DO" sections 
 
-#Functions
 def load_books(): #Opens the JSON file with book data
    with open('data.json', 'r') as file:
        library = json.load(file)
@@ -28,7 +32,6 @@ def get_book(title): #Loads the data associated with an inputted title #EDIT TO 
         print("The title you entered is not in library")
 
 def display_all_books(): #Displays the data of all the books in the JSON file #NOT DISPLAYING TITLE AT THE MOMENT
-    # TODO: get_book is being used inccorectly here- does not return any data for us to capture (may not be accurate)
     x = load_books()
     for title in x.keys():
         book_info = get_book(title)
@@ -37,7 +40,7 @@ def display_all_books(): #Displays the data of all the books in the JSON file #N
 
 def book_exists(title): #Checks if an inputted title exists in the JSON file
     # TODO: Explain this line: Return title in load_books()
-    # TODO: curreny implementation is fine, this us just a more pythonic way of doing it
+    # TODO: curreny implementation is fine, this is just a more pythonic way of doing it
     x = load_books()
     if title in x:
         return True
